@@ -16,6 +16,8 @@ spec:
     spec:
       containers:
         - image: andremarinhocloud/bancolabpersistencia:1.0
+          args:
+          - "--ignore-db-dir=lost+found"
           name: mysql
           env:            
             - name: MYSQL_ROOT_PASSWORD
