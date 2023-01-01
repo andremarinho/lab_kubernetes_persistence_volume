@@ -15,7 +15,7 @@ spec:
         app: mysql
     spec:
       containers:
-        - image: gcr.io/balmy-coral-368823/banco:1.0
+        - image: andremarinhocloud/bancolabpersistencia:1.0
           name: mysql
           env:            
             - name: MYSQL_ROOT_PASSWORD
